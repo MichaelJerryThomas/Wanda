@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sebuah Kado untuk Fransiska Wanda Febrianti ❤️</title>
-    <style>
-        /* Menggunakan font dari Google Fonts untuk tampilan yang lebih menarik */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script:wght@700&display=swap');
 
-        /* Style untuk seluruh halaman */
+    <title>Sebuah Kado untuk Fransiska Wanda Febrianti ❤️</title>
+
+    <style>
+        /* =========================
+           GOOGLE FONTS
+        ========================== */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+        /* =========================
+           STYLE SELURUH HALAMAN
+        ========================== */
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #ffeef8 0%, #ffc0e0 100%);
@@ -21,7 +29,10 @@
             color: #333;
         }
 
-        /* Kotak tempat konten utama */
+
+        /* =========================
+           KOTAK KONTEN UTAMA
+        ========================== */
         .container {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 30px 40px;
@@ -33,13 +44,26 @@
             animation: fadeIn 1.5s ease-in-out;
         }
 
-        /* Animasi fadeIn */
+
+        /* =========================
+           ANIMASI
+        ========================== */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        /* Style untuk judul/sapaan pembuka */
+
+        /* =========================
+           SAPAAN
+        ========================== */
         .greeting {
             font-size: 1.5em;
             font-weight: 600;
@@ -47,19 +71,28 @@
             margin-bottom: 20px;
         }
 
-        /* Style untuk paragraf biasa */
+
+        /* =========================
+           PARAGRAF
+        ========================== */
         p {
             margin-bottom: 1.2em;
         }
 
-        /* Style untuk bagian yang sedikit lebih 'puitis' */
+
+        /* =========================
+           KATA YANG DIHIGHLIGHT
+        ========================== */
         .highlight {
             font-style: italic;
             color: #6f42c1;
             font-weight: 500;
         }
 
-        /* Style untuk tanda tangan */
+
+        /* =========================
+           TANDA TANGAN
+        ========================== */
         .signature {
             text-align: right;
             font-family: 'Dancing Script', cursive;
@@ -68,107 +101,262 @@
             color: #c7366f;
         }
 
-        /* Emoji agar tidak terlalu besar */
+
+        /* =========================
+           EMOJI
+        ========================== */
         .emoji {
             font-size: 1.1em;
             vertical-align: middle;
         }
 
-        /* --- STYLE UNTUK FOTO --- */
-        
-        /* Bingkai untuk foto tunggal */
-        .photo-frame {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-            margin: 25px auto;
-            display: block;
-            transition: transform 0.3s ease;
-        }
 
-        /* Efek hover pada foto */
-        .photo-frame:hover {
-            transform: scale(1.03);
-        }
-
-        /* Kontainer untuk galeri foto */
+        /* =========================
+           GALERI FOTO
+        ========================== */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+            /* 3 foto sejajar */
+            grid-template-columns: repeat(3, 1fr);
+
             gap: 15px;
             margin: 25px 0;
             padding: 10px;
+
             background-color: rgba(255, 255, 255, 0.5);
+
             border-radius: 10px;
         }
 
-        /* Style untuk foto di dalam galeri */
+
+        /* =========================
+           FOTO
+        ========================== */
         .gallery img {
             width: 100%;
-            height: auto;
+            height: 200px;
+
+            /* Foto tetap seperti sebelumnya */
+            object-fit: cover;
+
             border-radius: 8px;
+
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
             transition: transform 0.3s ease;
+
+            display: block;
         }
 
-        /* Efek hover pada foto galeri */
+
+        /* =========================
+           EFEK SAAT FOTO DISOROT
+        ========================== */
         .gallery img:hover {
             transform: scale(1.05);
         }
 
+
+        /* =========================
+           TAMPILAN HP
+        ========================== */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 25px 20px;
+            }
+
+            /* Di HP menjadi 2 foto per baris */
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery img {
+                height: 160px;
+            }
+
+            .greeting {
+                font-size: 1.3em;
+            }
+        }
     </style>
 </head>
+
+
 <body>
 
     <div class="container">
-        <p class="greeting">Haii Cici, semoga suka ya sama kado nya :) <span class="emoji">🎁</span></p>
 
-        <p>
-            Ciee ya udah nyelesain tugas pinissi jadi MC sama tugas pelepasan wisuda september — keren banget sih <span class="emoji">🥹</span> jadi ketua panitia tuh nggak gampang, tapi cici bisa bawain acara pelepasan wisuda jadi momen paling keren dan berkesan. Bangga banget liat cici bisa sejauh itu <span class="emoji">😍</span> Congrats cicii kuu~ KPU juga bentar lagi kelar, yee akhirnya bisa napas lega <span class="emoji">😆</span> Oiya, sebentar lagi ada yang ulang tahun nihh... siap-siap ah buat kado lagi, tapi kali ini mungkin hadiahnya spesial dari hati <span class="emoji">😳🎁</span>
+        <!-- =========================
+             PEMBUKA
+        ========================== -->
+
+        <p class="greeting">
+            Haii Wenda, semoga suka ya bunga nya :)
+            <span class="emoji">🌷🤍</span>
         </p>
 
-        <!-- Galeri foto momen-momen seru -->
+
+        <!-- =========================
+             UCAPAN SEMANGAT
+        ========================== -->
+
+        <p>
+            Wenda, semangat kuliahnya yaa 🤍
+            Jangan terlalu dipikirin kalau lagi banyak tugas atau ada hal
+            yang bikin capek. Pelan-pelan aja, satu per satu pasti bisa
+            diselesaikan. Jangan lupa juga buat istirahat, makan yang
+            teratur, dan jaga kesehatan.
+            <span class="emoji">🥹🤍</span>
+        </p>
+
+
+        <p>
+            Aku tahu mungkin ada hari-hari di mana kuliah terasa melelahkan
+            dan bikin pengen menyerah. Tapi aku harap kamu tetap kuat dan
+            terus semangat, karena semua usaha yang kamu lakukan sekarang
+            pasti akan ada hasilnya nanti.
+        </p>
+
+
+        <p>
+            Jangan merasa kalau perjuangan kamu selama ini sia-sia yaa.
+            Mungkin hasilnya belum kelihatan sekarang, tapi setiap tugas,
+            setiap kesibukan, dan setiap rasa capek yang kamu lewati
+            semuanya adalah bagian dari perjalanan kamu menuju sesuatu
+            yang lebih besar.
+            <span class="emoji">✨</span>
+        </p>
+
+
+        <p>
+            Aku bakal selalu dukung kamu dan senang lihat kamu terus
+            berusaha mencapai apa yang kamu mau.
+            Kalau lagi capek, istirahat sebentar nggak apa-apa.
+            Tapi setelah itu, ayo semangat lagi.
+            <span class="emoji">💪🏻🤍</span>
+        </p>
+
+
+        <!-- =========================
+             GALERI FOTO PERTAMA
+        ========================== -->
+
         <div class="gallery">
-            <!-- Ganti 'nama-foto-asli.jpg' dengan nama file yang kamu simpan -->
-            <img src="image/image/WhatsApp Image 2025-10-09 at 16.43.28_05e2dd8d.jpg" >
-            <img src="image/image/WhatsApp Image 2025-10-09 at 16.42.03_a1acee13.jpg" >
-            <img src="image/image/WhatsApp Image 2025-10-09 at 16.43.27_fd17bafb.jpg" >
-            <img src="image/image/WhatsApp Image 2025-10-09 at 16.43.28_efb4fde5.jpg" >
+
+            <img
+                src="./Image/WhatsApp Image 2026-09-17 at 20.48.05.jpeg"
+                alt="Foto Cici 1"
+            >
+
+            <img
+                src="./Image/WhatsApp Image 2026-09-17 at 19.43.13 (2).jpeg"
+                alt="Foto Cici 2"
+            >
+
+            <img
+                src="./Image/WhatsApp Image 2026-09-17 at 20.48.33.jpeg"
+                alt="Foto Cici 3"
+            >
+
         </div>
 
+
+        <!-- =========================
+             PESAN TENTANG BUNGA
+        ========================== -->
+
         <p>
-            Btw Cici, jujur dari pertama kali ketemu sampe sekarang… koko tuh masih suka deg-degan tiap liat cici <span class="emoji">😅</span> rasanya kaya mau sidang metopen tapi pengujinya malaikat—soalnya cantik dan bikin tenang <span class="emoji">🤭💞</span>
+            Oh iya, soal bunga yang kemarin...
+            semoga kamu suka yaa.
+            <span class="emoji">🌷</span>
         </p>
 
-       <!-- Galeri foto momen-momen seru -->
+
+        <p>
+            Aku kasih bukan cuma supaya kamu punya bunga,
+            tapi supaya setiap kali kamu lihat bunganya,
+            kamu ingat kalau ada seseorang yang pengen kamu
+            selalu bahagia dan semangat.
+            <span class="emoji">🤍</span>
+        </p>
+
+
+        <p>
+            Kalau bunganya bisa layu, semoga semangat kamu
+            jangan ikut layu yaa wkwk.
+            <span class="emoji">😆🌷</span>
+            Kalau lagi capek, boleh istirahat,
+            tapi jangan menyerah.
+        </p>
+
+
+        <!-- =========================
+             GALERI FOTO KEDUA
+        ========================== -->
+
         <div class="gallery">
-            <!-- Ganti 'nama-foto-asli.jpg' dengan nama file yang kamu simpan -->
-            <img src="image/image/WhatsApp Image 2025-10-09 at 16.43.28_94295b75.jpg" >
-            <img src="image/image/WhatsApp Image 2025-10-09 at 16.47.21_e1422cec.jpg" >
-            <img src="image/image/WhatsApp Image 2025-10-09 at 16.47.21_ac196ddc.jpg" >
-            <img src="image/image/WhatsApp Image 2025-10-09 at 17.09.23_38c02f9a.jpg" >
+
+            <img
+                src="./Image/WhatsApp Image 2026-09-17 at 19.43.14 (1).jpeg"
+                alt="Foto Cici 4"
+            >
+
+            <img
+                src="./Image/WhatsApp Image 2026-09-17 at 19.43.14.jpeg"
+                alt="Foto Cici 5"
+            >
+
         </div>
+
+
+        <!-- =========================
+             PESAN ROMANTIS
+        ========================== -->
         <p>
-            Tiap jalan bareng cici tuh rasanya adem, nyaman, dan entah kenapa waktu selalu kerasa cepet banget. Mungkin karena koko terlalu betah liat senyum cici hehe <span class="emoji">🥰</span>
+            Jadi kalau suatu hari kamu lagi capek,
+            lagi banyak pikiran, atau merasa semuanya terlalu berat,
+            jangan lupa kalau kamu nggak harus selalu kuat setiap saat.
+            Istirahat sebentar, tarik napas,
+            lalu lanjut lagi pelan-pelan.
+            <span class="emoji">🤍</span>
         </p>
 
-        <p>
-            Abis lama jomblo dan mainnya cuma sama gerry, chandra, sama sirkel itu, ketemu cici tuh kayak nemu <span class="highlight">"versi hidup yang lebih berwarna"</span> <span class="emoji">🌈</span>
-        </p>
 
         <p>
-            Makasih ya cici, udah jadi orang yang bisa bikin hari-hari koko lebih cerah, lebih semangat, dan… lebih berarti <span class="emoji">💖</span>
+            Tetap semangat yaa, Wenda.
+            Kamu hebat, kamu sudah sejauh ini,
+            dan jangan lupa senyum hari ini,
+            karena senyum kamu itu sayang banget kalau sampai hilang.
+            <span class="emoji">🥰🤍🌷</span>
         </p>
+
+
+        <p>
+            Ke pasar membeli mangga,
+            Mangga jatuh kena sepatu.
+            Kalau Wenda senyum bahagia,
+            Entah kenapa aku ikut senang juga 🤭❤️
+            <span class="highlight">✨🤍</span>
+        </p>
+
+
+        <!-- =========================
+             SIGNATURE
+        ========================== -->
 
         <p class="signature">
-            By: michaeljerrythomas <span class="emoji">🌷</span>
+            By: michaeljerrythomas
+            <span class="emoji">🌷</span>
         </p>
+
     </div>
 
 </body>
+
 </html>
-
-
-
-
